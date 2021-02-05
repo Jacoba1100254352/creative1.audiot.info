@@ -1,0 +1,79 @@
+/**************
+*   Section   *
+**************/
+
+section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: "aside article"
+                       "div1 div1"
+                       "div2 div2"
+                       "div3 div3"
+                       "div4 div4"
+                       "div5 div5"
+                       "div6 div6";
+}
+
+aside, article {
+  padding: 1rem;
+}
+
+/************
+*   Aside   *
+************/
+
+aside {
+  background-color: orange;
+  grid-area: aside;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: "img p";
+  height: 50%;
+}
+
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
+.div4 { grid-area: div4; }
+.div5 { grid-area: div5; }
+.div6 { grid-area: div6; }
+.img { grid-area: img; }
+.p { grid-area: p; }
+
+
+/**************
+*   Article   *
+**************/
+
+article {
+  grid-area: article;
+}
+
+.verticle_list {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.verticle_list li {
+  list-style-type: none;
+  height: 100%;
+  margin: 0px auto;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+}
+
+
+
+
