@@ -13,6 +13,7 @@ section {
                        "div4 div4"
                        "div5 div5"
                        "div6 div6";
+  padding-bottom: 1rem;
 }
 
 aside, article {
@@ -32,7 +33,6 @@ div {
   display: grid;
   grid-template-columns: 30% auto;
   grid-template-areas: "img p";
-  height: 50%;
 }
 
 .div1 { grid-area: div1; }
